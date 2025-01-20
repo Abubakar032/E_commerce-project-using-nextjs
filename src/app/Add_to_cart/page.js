@@ -3,6 +3,7 @@ import { Add_to_cart_conetxt_data } from '../Contexts/add_to_cart_context';
 
 
 const Cart = () => {
+
   const {cart,deleteItem,clearcart,totalAmount,shippingfee,decrement,increment, isLoading}=Add_to_cart_conetxt_data();
   // console.log(cart,"cart")
 
@@ -14,6 +15,8 @@ const Cart = () => {
             </a>
     </div>
   }
+
+
   return (
 
     <div className='m-auto lg:w-4/5 mt-5 pt-36' >
@@ -27,7 +30,7 @@ const Cart = () => {
        
     </div>
 <div className='  snap-x text-center overflow-scroll max-h-96 w-auto  lg:font-bold'>
-    {cart.map((currentitem, index) => (
+    {cart?.map((currentitem, index) => (
         <div className=' grid-cols-5 mt-5 mx-2 bg-gray-50 grid place-items-center' key={index}>
           <div className='grid lg:grid-cols-2'>
           <div>
