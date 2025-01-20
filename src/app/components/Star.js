@@ -5,7 +5,7 @@ import StarBorderIcon from '@mui/icons-material/StarBorder';
 import StarHalfIcon from '@mui/icons-material/StarHalf';
 
 const Star = ({ star, review }) => {
-  const ringstar = Array.from({ length: 6 }, (elem, index) => {
+  const ringstar = Array.from({ length: 5 }, (elem, index) => {
     return (
       <span key={index}>
         {star > index + 1 ? (
