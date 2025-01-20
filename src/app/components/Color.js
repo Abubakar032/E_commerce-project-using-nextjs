@@ -44,7 +44,7 @@ const {add_card}=Add_to_cart_conetxt_data();
     </div>
     <h1 className='flex'> <RemoveIcon onClick={decrement} className='mt-3 mx-3 bg-red-600' /> {statee} <AddIcon className='mt-3 mx-3 bg-green-600' onClick={increment} /></h1>
     <Link href='/Add_to_cart' onClick={()=>add_card(id,selectedColor ,stock ,product, statee)} >
-<button type="button" className='bg-red-600 text-black p-2 rounded-xl mt-3 hover:bg-white hover:text-red-500 border font-bold' >Add to cart</button>
+<button type="button" className='bg-red-600 text-black p-2 rounded-xl mt-3   hover:bg-opacity-80 border font-bold' >Add to cart</button>
        
     </Link>
        

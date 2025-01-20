@@ -6,7 +6,7 @@ const Wrapeed = () => {
   const { featureProducts = [] } = useHeroSecContext();
 
   return (
-    <div className='mt-52 lg:mt-2 '>
+    <div className='mt-52 lg:mt-2   ' >
       <div className='future m-auto mt-52 h-auto my-12 w-full bg-gray-300 '>
         <div className='m-auto mb-5' style={{ maxWidth: "80%" }}>
           check now

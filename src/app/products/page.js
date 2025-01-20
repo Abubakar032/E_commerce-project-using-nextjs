@@ -96,7 +96,7 @@ const Products = () => {
           <div className='text-center'>
             <form action='' className='border p-2 mt-4  lg:mt-0'>
               <select
-                className='outline-none'
+                className='outline-none cursor-pointer'
                 onChange={(e) => sorting(e)}
                 name='sort'
                 id='sort'
