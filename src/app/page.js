@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <>
-      <div className='m-auto w-4/5  pt-24 '  >
+      <div className='m-auto w-4/5  pt-24  pb-[400px] lg:pb-5 '   >
         <div className='grid lg:grid-cols-2  h-96      gap-3  my-8'>
           <div className='  '>
             <p className='font-bold'>Welcome to </p>

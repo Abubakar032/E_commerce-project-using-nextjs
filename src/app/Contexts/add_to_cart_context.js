@@ -7,7 +7,7 @@ const createcontext3=createContext();
 const localStorageData=(()=>{
     
     let localdata=localStorage.getItem("abubakar");
-    if(localdata===[]){
+    if(!localdata){
         return []
     }else{
         return JSON.parse(localdata)

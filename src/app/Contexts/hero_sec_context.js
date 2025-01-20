@@ -2,6 +2,7 @@
 import axios from 'axios';
 import React, { createContext, useContext, useEffect, useReducer } from 'react';
 import { hero_sec_reducer } from '../Reducers/hero_sec_reducer';
+import { useRouter } from 'next/navigation';
 
 const HeroSecContext = createContext();
 
@@ -18,11 +19,12 @@ const apiUrl = 'https://api.pujakaitem.com/api/products?';
 
 const HeroSecProvider = ({ children }) => {
   const [state, dispatch] = useReducer(hero_sec_reducer, initialState);
+  const router = useRouter()
 
-  const fetchData = async (url) => {
+  const fetchData = async () => {
     dispatch({ type: "IS_LOADING" });
     try {
-      const res = await axios.get(url);
+      const res = await axios.get(apiUrl);
       const products = res.data;
       console.log("apidata", products);
       dispatch({ type: "API_DATA", payload: products });
@@ -43,9 +45,15 @@ const HeroSecProvider = ({ children }) => {
     }
   };
 
+
+
   useEffect(() => {
-    fetchData(apiUrl);
+ 
+ fetchData();
+  
+
   }, []);
+  
 
   return (
     <HeroSecContext.Provider value={{ ...state, fetchSingleProduct }}>
