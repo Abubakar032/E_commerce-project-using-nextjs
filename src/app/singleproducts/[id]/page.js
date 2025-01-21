@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import Star from '@/app/components/Star';
 import Colors from '@/app/components/Color';
 
-const url2 = 'https://api.pujakaitem.com/api/products';
+const url2 = 'http://localhost:6363/api/products/';
 
 const SingleProduct = () => {
   const { id } = useParams();
