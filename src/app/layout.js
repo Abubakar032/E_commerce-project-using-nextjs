@@ -6,6 +6,7 @@ import { Product_context } from "./Contexts/producrt_context";
 import { Add_to_cart_Context } from "./Contexts/add_to_cart_context";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ChatbaseIntegration from "./components/ChatbaseIntegration";
 
 
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
             <Add_to_cart_Context>
               <Navbar />
               {children}
+              <ChatbaseIntegration />
               <Footer />
             </Add_to_cart_Context>
           </Product_context>
