@@ -52,7 +52,7 @@ const HeroSecProvider = ({ children }) => {
  fetchData();
   
 
-  }, []);
+  }, [router.pathname]);
   
 
   return (
