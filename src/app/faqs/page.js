@@ -53,6 +53,7 @@ const Faqs = () => {
 
   return (
     <div className="sectionlayout px-5 z-10">
+      <h2 className='mt-40 mb-16 font-bold text-center drop-shadow-lg ' style={{fontSize:'clamp(36px,3vw,65px)'}}>FAQs</h2>
       <div className="pb-8 mt-10">
         <h1
           className="font-bold mb-10 text-center"
