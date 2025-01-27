@@ -1,11 +1,12 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Gridlist from '../components/Gridview';
 import Listview from '../components/Listview';
 import AppsIcon from '@mui/icons-material/Apps';
 import MenuIcon from '@mui/icons-material/Menu';
 import Products_sidebar from '../components/Product_sidebar';
 import { ProductContext } from '../Contexts/producrt_context';
+import { useHeroSecContext } from '@/app/Contexts/hero_sec_context';
 
 
 
@@ -21,10 +22,11 @@ const Products = () => {
     listviewfunc,
     sorting,
     searchDta,
-
+    Alldata,
     load,
   } = ProductContext();
 
+  const { products } = useHeroSecContext();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -37,8 +39,11 @@ const Products = () => {
     setIsMenuOpen(false)
   }
 
+  useEffect(()=>{
+    Alldata()
+  },[products])
 
-
+console.log(productsdata, "productsdata")
 
   if (load) {
     return <p>Loading............</p>

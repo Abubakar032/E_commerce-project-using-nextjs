@@ -1,0 +1,629 @@
+[{
+  "_id": {
+    "$oid": "67924fa11d34dd72422f9cfa"
+  },
+  "name": "Men's Casual Shirt",
+  "company": "Alpha Rise Fashion",
+  "price": 2500,
+  "image": "https://hourscollection.com/cdn/shop/files/DropShoulderHoodie-Black-ClipTag2_800x.png?v=1736140913",
+  "colors": [
+    "#000",
+    "#FFF",
+    "#3498DB"
+  ],
+  "description": "A high-quality casual shirt made from 100% cotton, perfect for all-day comfort.",
+  "category": "shirts",
+  "featured": true,
+  "stock": 6,
+  "reviews": 40,
+  "stars": 3.4,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://uniworthdress.com/uploads/product/TCN2480-2.jpg",
+      "_id": {
+        "$oid": "67924fa11d34dd72422f9cfb"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": " https://www.stoneycreek.co.nz/image/catalog/product_images/corporate/mens/shirts/Mens_Corporate_Shirt_Long_Sleeve_Float_Navy.jpg",
+      "_id": {
+        "$oid": "67924fa11d34dd72422f9cfc"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXaK9OCtqRXueQm75wBI6Qc5_P3hjhaTWdg&s",
+      "_id": {
+        "$oid": "67924fa11d34dd72422f9cfd"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://www.sclothers.com/cdn/shop/products/2_9cfcf72e-8abc-48d2-9743-c05eb621ad4e.jpg?v=1656506961&width=1080",
+      "_id": {
+        "$oid": "67924fa11d34dd72422f9cfe"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792509b1d34dd72422f9d00"
+  },
+  "name": "Classic Hoodie",
+  "company": "Cozy Wear",
+  "price": 4000,
+  "image": "https://hourscollection.com/cdn/shop/files/DropShoulderHoodie-Black-ClipTag2_800x.png?v=1736140913",
+  "colors": [
+    "#000",
+    "#FF5733"
+  ],
+  "description": "A premium hoodie with a soft fleece lining, perfect for winter weather.",
+  "category": "hoodies",
+  "stock": 16,
+  "reviews": 30,
+  "stars": 4.4,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwsZ5X22DJ0VifHs8UHCdQJkiyQWI6_eb1qQ&s",
+      "_id": {
+        "$oid": "6792509b1d34dd72422f9d01"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": " https://pangaia.com/cdn/shop/files/Recycled-Cotton-Hoodie-Navy-1_91c97d05-e359-4be2-a6c0-25439dd1702b.png?crop=center&height=1999&v=1727177412&width=1500",
+      "_id": {
+        "$oid": "6792509b1d34dd72422f9d02"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXaK9OCtqRXueQm75wBI6Qc5_P3hjhaTWdg&s",
+      "_id": {
+        "$oid": "6792509b1d34dd72422f9d03"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://i5.walmartimages.com/seo/Hoodies-For-Men-Men-s-Casual-Solid-Dropped-Shoulder-Sleeve-Tops-Drawstring-Pocket-Hoodies-Blouse-Sweatshirts-Fashion-Gray_09c03978-6c29-45dc-93e8-2e9173a31121.041e9db1d0029eafc3518a7a8d7f13e5.jpeg",
+      "_id": {
+        "$oid": "6792509b1d34dd72422f9d04"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679251d21d34dd72422f9d06"
+  },
+  "name": "Pro Boxing Kit",
+  "image": "https://static-01.daraz.pk/p/9e24f1096ad1db81ade67c2c1d0274ee.jpg",
+  "colors": [
+    "#E74C3C",
+    "#000"
+  ],
+  "description": "A complete boxing kit including gloves, wraps, and headgear for professionals.",
+  "category": "boxing kits",
+  "stock": 26,
+  "reviews": 50,
+  "stars": 4.6,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://hayabusa-us.imgix.net/products/T3Gloves_HandWraps_Deodorizer_Bundle.png?auto=compress,format&fm=pjpg&q=50&w=585&h=585&fit=fill",
+      "_id": {
+        "$oid": "679251d21d34dd72422f9d07"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwznshw8RQJL9UhBGhzHr96e8xTkQk6h_Zew&s",
+      "_id": {
+        "$oid": "679251d21d34dd72422f9d08"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs1UcJoKXl2YA26yIkQF5diVO8IgaFaCyLDg&s",
+      "_id": {
+        "$oid": "679251d21d34dd72422f9d09"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://rukminim2.flixcart.com/image/750/900/kvgzyq80/kit/9/q/f/full-adult-pack-prmpscbh01-28-prospo-36-83-original-imag8dfmcgqvd9pu.jpeg?q=20&crop=false",
+      "_id": {
+        "$oid": "679251d21d34dd72422f9d0a"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679252bb1d34dd72422f9d0c"
+  },
+  "name": "Leather Boxing Gloves",
+  "company": "Champion Gear",
+  "price": 3500,
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2nBCUbDvuiWN2pw9_dshmPvQ8xtWV177CsQ&s",
+  "colors": [
+    "#000",
+    "#FFF"
+  ],
+  "description": "Durable and comfortable leather boxing gloves for training and competition.",
+  "category": "gloves",
+  "stock": 26,
+  "reviews": 20,
+  "stars": 4.4,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIbL5ugbbYlkMEcgTEfKl36UPCwJgc1fPMQg&s",
+      "_id": {
+        "$oid": "679252bb1d34dd72422f9d0d"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dvK-kb9gXQ517xcdPVMitTAuAHvg0nP6NQ&s",
+      "_id": {
+        "$oid": "679252bb1d34dd72422f9d0e"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://pyxis.nymag.com/v1/imgs/af5/31b/07858c205b39bdc0ebab1ce43e232fba1f.rsquare.w600.jpg",
+      "_id": {
+        "$oid": "679252bb1d34dd72422f9d0f"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiCdRoU1ZbVDBTWIBEIRKyzmkeGiU8U6oqgw&s",
+      "_id": {
+        "$oid": "679252bb1d34dd72422f9d10"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679253c41d34dd72422f9d12"
+  },
+  "name": "Performance Tracksuit",
+  "company": "Sporty Pro",
+  "price": 6000,
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ZPxebtUr-rFzVvS39hOeJYk0RtuVKcIHCQ&s",
+  "colors": [
+    "#1ABC9C",
+    "#000"
+  ],
+  "description": "A lightweight and breathable tracksuit designed for optimal performance.",
+  "category": "tracksuits",
+  "stock": 26,
+  "reviews": 90,
+  "stars": 4.6,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://ausman.pk/cdn/shop/files/track-suit-for-ladies-online-in-pakistan.webp?v=1694668757&width=1100",
+      "_id": {
+        "$oid": "679253c41d34dd72422f9d13"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": "https://brandsroots.com/cdn/shop/files/ADSingleJerseyTracksuitForLadies-LightPurplewithStripe-BR13742.jpg?v=1719296896",
+      "_id": {
+        "$oid": "679253c41d34dd72422f9d14"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://wildgoat.com.pk/cdn/shop/products/DSC_2983.jpg?v=1638356114",
+      "_id": {
+        "$oid": "679253c41d34dd72422f9d15"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://decuirshop.com/cdn/shop/products/brown-elastic-brown4.jpg?v=1700604793&width=533",
+      "_id": {
+        "$oid": "679253c41d34dd72422f9d16"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679254621d34dd72422f9d18"
+  },
+  "name": "Jogger Trousers",
+  "company": "Urban Wear",
+  "price": 3000,
+  "image": "https://www.alexandra.co.uk/media/catalog/product/n/f/nf131_bk_front.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700",
+  "colors": [
+    "#2ECC71",
+    "#000"
+  ],
+  "description": "Stylish and comfortable jogger trousers made from a soft cotton blend.",
+  "category": "trousers",
+  "stock": 76,
+  "reviews": 60,
+  "stars": 4.1,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmJ0-_KN7-KndSwN-307kOs0lYId0h3hjMVw&s",
+      "_id": {
+        "$oid": "679254621d34dd72422f9d19"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI52krAwEk0B1R-rIrgCJy2i6GQfYISwpeDA&s",
+      "_id": {
+        "$oid": "679254621d34dd72422f9d1a"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy0sSztg6TAHTbTwGAdC3ozKGqrzv8mZiVjA&s",
+      "_id": {
+        "$oid": "679254621d34dd72422f9d1b"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://decuirshop.com/cdn/shop/products/brown-elastic-brown4.jpg?v=1700604793&width=533",
+      "_id": {
+        "$oid": "679254621d34dd72422f9d1c"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679254fb1d34dd72422f9d1e"
+  },
+  "name": "Formal Shirt",
+  "company": "Alpha Rise Fashion",
+  "price": 2800,
+  "image": "https://www.stoneycreek.co.nz/image/catalog/product_images/corporate/mens/shirts/Mens_Corporate_Shirt_Long_Sleeve_Float_Navy.jpg",
+  "colors": [
+    "#000",
+    "#3498DB"
+  ],
+  "description": "Elegant formal shirt suitable for office wear and special occasions.",
+  "category": "shirts",
+  "stock": 5,
+  "reviews": 20,
+  "stars": 4.1,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDJM3uk6j7TiGK50qCr6bdmM5SXBIEn-bdzg&s",
+      "_id": {
+        "$oid": "679254fb1d34dd72422f9d1f"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Vq2StWVdZVyG_BE72AN_IyalBjfLxGtVAg&sv",
+      "_id": {
+        "$oid": "679254fb1d34dd72422f9d20"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/13205276/2021/7/14/2139ea65-43a1-481f-8359-d36ae83c749d1626255735543-all-about-you-Women-Mauve-Regular-Fit-Solid-Casual-Shirt-405-1.jpg",
+      "_id": {
+        "$oid": "679254fb1d34dd72422f9d21"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://uniworthdress.com/uploads/product/TCN2480-2.jpg",
+      "_id": {
+        "$oid": "679254fb1d34dd72422f9d22"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679255ef1d34dd72422f9d24"
+  },
+  "name": "Graphic Hoodie",
+  "company": "Trend Wave",
+  "price": 4500,
+  "image": "https://www.togethxr.com/cdn/shop/files/231208_TGXR_Merch_Drop_Site_PDP_EWWS_Hoodie_1.jpg?v=1702064727",
+  "colors": [
+    "#8E44AD",
+    "#000"
+  ],
+  "description": "A trendy hoodie with unique graphic prints for a bold statement.",
+  "category": "hoodies",
+  "stock": 5,
+  "reviews": 20,
+  "stars": 4.1,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://teetall.pk/cdn/shop/products/00123c8df31fed73e730fa4346446d77.webp?v=1695122271&width=533",
+      "_id": {
+        "$oid": "679255ef1d34dd72422f9d25"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": "https://nobero.com/cdn/shop/files/mocha-bisque_369e451c-23a8-4ee6-8bed-a852aceeddfe.jpg?v=1735811881",
+      "_id": {
+        "$oid": "679255ef1d34dd72422f9d26"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwsZ5X22DJ0VifHs8UHCdQJkiyQWI6_eb1qQ&s",
+      "_id": {
+        "$oid": "679255ef1d34dd72422f9d27"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://i5.walmartimages.com/seo/Hoodies-For-Men-Men-s-Casual-Solid-Dropped-Shoulder-Sleeve-Tops-Drawstring-Pocket-Hoodies-Blouse-Sweatshirts-Fashion-Gray_09c03978-6c29-45dc-93e8-2e9173a31121.041e9db1d0029eafc3518a7a8d7f13e5.jpeg",
+      "_id": {
+        "$oid": "679255ef1d34dd72422f9d28"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "679256e21d34dd72422f9d2a"
+  },
+  "name": "Deluxe Boxing Kit",
+  "company": "Pro Fighter",
+  "price": 9500,
+  "image": "https://hayabusa-us.imgix.net/products/T3Gloves_HandWraps_Deodorizer_Bundle.png?auto=compress,format&fm=pjpg&q=50&w=585&h=585&fit=fill",
+  "colors": [
+    "#C0392B",
+    "#000"
+  ],
+  "description": "An advanced boxing kit with professional-grade equipment for champions.",
+  "category": "boxing kits",
+  "stock": 10,
+  "reviews": 27,
+  "stars": 4.3,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSykwBHjqoK_FW6uD97nC340nZUiMXltYHauA&s",
+      "_id": {
+        "$oid": "679256e21d34dd72422f9d2b"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYzSX66HauwmaEWvpH8yXujq7T0N7SlnqHtQ&s",
+      "_id": {
+        "$oid": "679256e21d34dd72422f9d2c"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs1UcJoKXl2YA26yIkQF5diVO8IgaFaCyLDg&s",
+      "_id": {
+        "$oid": "679256e21d34dd72422f9d2d"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://rukminim2.flixcart.com/image/750/900/kvgzyq80/kit/9/q/f/full-adult-pack-prmpscbh01-28-prospo-36-83-original-imag8dfmcgqvd9pu.jpeg?q=20&crop=false",
+      "_id": {
+        "$oid": "679256e21d34dd72422f9d2e"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792571e1d34dd72422f9d30"
+  },
+  "name": "Deluxe Boxing Kit",
+  "company": "Pro Fighter",
+  "price": 9500,
+  "image": "https://hayabusa-us.imgix.net/products/T3Gloves_HandWraps_Deodorizer_Bundle.png?auto=compress,format&fm=pjpg&q=50&w=585&h=585&fit=fill",
+  "colors": [
+    "#C0392B",
+    "#000"
+  ],
+  "description": "An advanced boxing kit with professional-grade equipment for champions.",
+  "category": "boxing kits",
+  "featured": true,
+  "stock": 10,
+  "reviews": 27,
+  "stars": 4.3,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSykwBHjqoK_FW6uD97nC340nZUiMXltYHauA&s",
+      "_id": {
+        "$oid": "6792571e1d34dd72422f9d31"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYzSX66HauwmaEWvpH8yXujq7T0N7SlnqHtQ&s",
+      "_id": {
+        "$oid": "6792571e1d34dd72422f9d32"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs1UcJoKXl2YA26yIkQF5diVO8IgaFaCyLDg&s",
+      "_id": {
+        "$oid": "6792571e1d34dd72422f9d33"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://rukminim2.flixcart.com/image/750/900/kvgzyq80/kit/9/q/f/full-adult-pack-prmpscbh01-28-prospo-36-83-original-imag8dfmcgqvd9pu.jpeg?q=20&crop=false",
+      "_id": {
+        "$oid": "6792571e1d34dd72422f9d34"
+      }
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6792581c1d34dd72422f9d36"
+  },
+  "name": "Winter Gloves",
+  "company": "Cozy Wear",
+  "price": 1500,
+  "image": "https://hiltonenterprises.com.pk/wp-content/uploads/2023/10/Primium-Goat-Skin-Grain-Leather-Driver-Gloves-Ke-Stone-Thumb-Main.webp",
+  "colors": [
+    "#000",
+    "#3498DB"
+  ],
+  "description": "Warm and comfortable gloves made with insulated fabric for winter.",
+  "category": "gloves",
+  "featured": true,
+  "stock": 12,
+  "reviews": 23,
+  "stars": 4.6,
+  "images": [
+    {
+      "id": "img1",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6szg9Y4MV264NxHXdj0ug7TjoImhg8oeag&s",
+      "_id": {
+        "$oid": "6792581c1d34dd72422f9d37"
+      }
+    },
+    {
+      "id": "img2",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiCdRoU1ZbVDBTWIBEIRKyzmkeGiU8U6oqgw&s",
+      "_id": {
+        "$oid": "6792581c1d34dd72422f9d38"
+      }
+    },
+    {
+      "id": "img3",
+      "width": 1080,
+      "height": 650,
+      "url": " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh7bSq8DRoVYk9MWtKOcc2Zy4WPkUfCykZ8g&s",
+      "_id": {
+        "$oid": "6792581c1d34dd72422f9d39"
+      }
+    },
+    {
+      "id": "img4",
+      "width": 1080,
+      "height": 650,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3dvK-kb9gXQ517xcdPVMitTAuAHvg0nP6NQ&s",
+      "_id": {
+        "$oid": "6792581c1d34dd72422f9d3a"
+      }
+    }
+  ],
+  "__v": 0
+}]

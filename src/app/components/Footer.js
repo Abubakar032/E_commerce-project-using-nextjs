@@ -2,6 +2,7 @@
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Link from 'next/link';
 const Footer = () => {
   return (
     <div>
@@ -51,8 +52,10 @@ const Footer = () => {
             @{new Date().getFullYear()}AthleticEdge All right Reserveed
           </div>
           <div className='w-1/2'>
-            PRIVACY POLICY <br />
-            TERMS & CONDITIONs
+          <Link href='faqs'> Faqs </Link>
+
+            <br />
+           <Link href='terms-and-conditions'> TERMS & CONDITIONs </Link>
           </div>
         </div>
       </div>

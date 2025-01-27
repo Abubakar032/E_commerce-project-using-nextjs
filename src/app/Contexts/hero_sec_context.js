@@ -15,7 +15,7 @@ const initialState = {
   singleProduct: {}, 
 };
 
-const apiUrl = 'https://api.pujakaitem.com/api/products?'; 
+const apiUrl = 'http://localhost:6363/api/products/'; 
 
 const HeroSecProvider = ({ children }) => {
   const [state, dispatch] = useReducer(hero_sec_reducer, initialState);

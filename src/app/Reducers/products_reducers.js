@@ -36,9 +36,9 @@ export const product_reducer = (state, action) => {
         let temsosrt = Array.isArray(action.payload) ? [...action.payload] : [];
   
         if (state.sortValue === "a-z") {
-          newsortData = [...temsosrt].sort((a, b) => a.name.localeCompare(b.name));
+          newsortData = [...temsosrt].sort((a, b) => a?.name.localeCompare(b?.name));
         } else if (state.sortValue === "z-a") {
-          newsortData = [...temsosrt].sort((a, b) => b.name.localeCompare(a.name));
+          newsortData = [...temsosrt].sort((a, b) => b?.name.localeCompare(a?.name));
         } else if (state.sortValue === "lowest") {
           newsortData = [...temsosrt].sort((a, b) => a.price - b.price);
         } else if (state.sortValue === "highest") {
@@ -63,7 +63,7 @@ export const product_reducer = (state, action) => {
       case "SEARCH_DATA":
         const search = Array.isArray(action.payload) ? [...action.payload] : [];
         const search2 = search.filter((currentItem) =>
-          currentItem.name.toLowerCase().includes(action.payload2)
+          currentItem?.name.toLowerCase().includes(action.payload2)
         );
         return {
           ...state,
