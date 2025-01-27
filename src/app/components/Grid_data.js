@@ -3,12 +3,12 @@ import Link from 'next/link';
 
 
 const Grid_data = (curentItem) => {
-    const {id,name,company,  image,}=curentItem;
+    const {_id,name,company,  image,}=curentItem;
   
   return (
     <div>
     
-    <Link href={`/singleproducts/${id}`}>
+    <Link href={`/singleproducts/${_id}`}>
     <div className=' mb-20 mx-3 lg:hover:p-1'>
         
                 

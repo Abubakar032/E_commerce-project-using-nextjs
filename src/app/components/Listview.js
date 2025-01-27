@@ -15,12 +15,12 @@ const Listview = () => {
   return (
     <div className='mb-10'>
       {productsdata.map((currentItem) => {
-        const { image, category, id, price, description, name } = currentItem;
+        const { image, category, _id, price, description, name } = currentItem;
 
         return (
           <div className='grid lg:grid-cols-2 md:grid-cols-2 mt-3 border' key={id}>
             <div className='hover:p-1'>
-              <Link href={`/singleproducts/${id}`}>
+              <Link href={`/singleproducts/${_id}`}>
                 <img src={image} alt=""  className='h-full'/>
               </Link>
             </div>

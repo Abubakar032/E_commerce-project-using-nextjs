@@ -43,7 +43,7 @@ const Products = () => {
     Alldata()
   },[products])
 
-console.log(productsdata, "productsdata")
+// console.log(productsdata, "productsdata")
 
   if (load) {
     return <p>Loading............</p>

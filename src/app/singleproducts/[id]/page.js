@@ -11,17 +11,20 @@ const SingleProduct = () => {
   const { id } = useParams();
   const { fetchSingleProduct, singleProduct, setLoading } = useHeroSecContext();
 
+  console.log(singleProduct, "singleProduct")
+
   const [Image, setImage] = useState();
 
+  console.log(id, "_id")
   useEffect(() => {
-    fetchSingleProduct(`${url2}?id=${id}`);
+    fetchSingleProduct(`http://localhost:6363/api/products/679252bb1d34dd72422f9d0c`);
   }, [id]);
 
   useEffect(() => {
     if (singleProduct?.image && singleProduct.image.length > 0) {
-      setImage(singleProduct.image[0].url);
+      setImage(singleProduct.images[0].url);
     }
-  }, [singleProduct?.image]);
+  }, [singleProduct?.images]);
 
   if (setLoading) {
     return (
@@ -33,7 +36,7 @@ const SingleProduct = () => {
     );
   }
 
-  const images = singleProduct.image || [];
+  const images = singleProduct.images || [];
 
   return (
     <>
@@ -61,7 +64,7 @@ const SingleProduct = () => {
           <p>Brand: {singleProduct.company}</p>
           <hr />
           {/* Assuming Colors component is defined */}
-          <Colors color={singleProduct.colors} id={singleProduct.id} product={singleProduct} stock={singleProduct.stock} />
+          <Colors color={singleProduct.colors} id={singleProduct._id} product={singleProduct} stock={singleProduct.stock} />
         </div>
       </div>
     </>

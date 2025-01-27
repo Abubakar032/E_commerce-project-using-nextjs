@@ -5,7 +5,7 @@ import { Add_to_cart_conetxt_data } from '../Contexts/add_to_cart_context';
 const Cart = () => {
 
   const {cart,deleteItem,clearcart,totalAmount,shippingfee,decrement,increment, isLoading}=Add_to_cart_conetxt_data();
-  // console.log(cart,"cart")
+  console.log(cart,"cart")
 
 
   if(isLoading){

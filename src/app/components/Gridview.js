@@ -10,10 +10,12 @@ const Grid_view = () => {
     return <p>Loading...</p>;
   }
 
+  console.log(productsdata, "productsdata")
+  
   return (
     <div className='grid lg:grid-cols-3 md:grid-cols-3'>
       {productsdata.map((currentItem, index) => (
-        <Grid_data key={currentItem.id} {...currentItem}></Grid_data>
+        <Grid_data key={currentItem._id} {...currentItem}></Grid_data>
       ))}
     </div>
   );

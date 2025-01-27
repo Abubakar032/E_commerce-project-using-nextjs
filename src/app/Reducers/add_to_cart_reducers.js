@@ -15,7 +15,7 @@ export const ADD_TO_CART_reducer = (state, action) => {
                 amount: stock,
                 color: selectedColor,
                 name: product.name,
-                image: product.image[0].url,
+                image: product.image,
                 price: product.price,
                 max: product.stock,
               };

@@ -9,12 +9,16 @@ import Link from 'next/link';
 const Colors = ({ color = [], id ,stock, product }) => {
   const [selectedColor, setSelectedColor] = useState(color[0]);
   const [statee, setstate]=useState(1)
+
 const {add_card}=Add_to_cart_conetxt_data();
+
+
   const decrement=()=>{
 
         statee>1?setstate(statee -1):setstate(1)
   }
   
+  console.log(product, "product")
 
   const increment=()=>{
     statee<stock?setstate(statee+1):setstate(stock)
