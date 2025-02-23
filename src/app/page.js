@@ -22,7 +22,7 @@ const Home = () => {
         <FeatureProducts />
       </section>
 
-      {/* <div className="grid lg:grid-cols-3 gap-8 max-w-[1440px] mx-8  2xl:mx-auto py-20">
+      <div className="grid lg:grid-cols-3 gap-8 max-w-[1440px] mx-8  2xl:mx-auto py-20">
         <div
           className="shadow-lg p-6 text-orange-500  bg-gray-100 rounded-lg flex flex-col items-center justify-center space-y-4 transition duration-300 hover:shadow-xl"
           data-aos="fade-up"
@@ -76,10 +76,10 @@ const Home = () => {
             Super Secure Payment System
           </p>
         </div>
-      </div> */}
+      </div>
 
       {/* Trusted Companies Section */}
-      <section className="bg-gray-100 py-12 w-full">
+      <section className=" py-12 w-full">
         <p className="text-center text-lg font-semibold" data-aos="fade-up">
           Trusted by <span className="text-orange-500 font-bold">3000+</span>{" "}
           companies

@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
           <Product_context>
             <Add_to_cart_Context>
               <Navbar />
+            
               {children}
               <ChatbaseIntegration />
               <Footer />

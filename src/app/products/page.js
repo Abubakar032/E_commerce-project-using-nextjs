@@ -1,18 +1,19 @@
-"use client"
-import React, { useEffect, useState } from 'react';
-import Gridlist from '../components/Gridview';
-import Listview from '../components/Listview';
-import AppsIcon from '@mui/icons-material/Apps';
-import MenuIcon from '@mui/icons-material/Menu';
-import Products_sidebar from '../components/Product_sidebar';
-import { ProductContext } from '../Contexts/producrt_context';
-import { useHeroSecContext } from '@/app/Contexts/hero_sec_context';
-
-
-
-
+"use client";
+import React, { useEffect, useState } from "react";
+import Gridlist from "../components/Gridview";
+import Listview from "../components/Listview";
+import AppsIcon from "@mui/icons-material/Apps";
+import MenuIcon from "@mui/icons-material/Menu";
+import Products_sidebar from "../components/Product_sidebar";
+import { ProductContext } from "../Contexts/producrt_context";
+import { useHeroSecContext } from "@/app/Contexts/hero_sec_context";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Products = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
 
   const {
     productsdata,
@@ -29,115 +30,88 @@ const Products = () => {
   const { products } = useHeroSecContext();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeSidebar = () => setIsMenuOpen(false);
 
-
-
-  const close_sidebar = () => {
-    setIsMenuOpen(false)
-  }
-
-  useEffect(()=>{
-    Alldata()
-  },[products])
-
-// console.log(productsdata, "productsdata")
+  useEffect(() => {
+    Alldata();
+  }, [products]);
 
   if (load) {
-    return <p>Loading............</p>
+    return <p className="text-center text-lg font-semibold my-10">Loading...</p>;
   }
 
   return (
+    <div className="m-auto py-28 mb-20 px-5 md:px-16 bg-gray-50 min-h-screen">
+      <h1 className="text-center text-4xl font-bold text-gray-800 mb-6" data-aos="fade-down">
+        Our Products
+      </h1>
 
-    <div className='m-auto  pt-32 w-4/5'>
-      <div className='lg:flex w-full '>
-        <div className='flex justify-between md:w-full lg:w-1/2'>
-          <div> <button
-            className="text-black focus:outline-none lg:hidden "
-            onClick={toggleMenu}
-          >
-            <svg
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
+      {/* Top Controls */}
+      <div className="lg:flex justify-between items-center w-full bg-white p-4 shadow-md rounded-lg" data-aos="fade-up">
+        <div className="flex items-center gap-4">
+          <button className="lg:hidden text-black" onClick={toggleMenu}>
+            <MenuIcon className="h-7 w-7" />
           </button>
-          </div>
-          <div>
-            <input
-              className='border  p-2 sm:w-full lg:mr-36 lg:mt-4 lg:w-56 '
-              placeholder='Search'
-              type='text'
-              onChange={searchDta}></input>
-          </div>
-          <div className='flex items-center'>
+
+          <input
+            className="border border-gray-300 p-2 rounded-md w-60 focus:ring-2 focus:ring-orange-500"
+            placeholder="Search..."
+            type="text"
+            onChange={searchDta}
+          />
+        </div>
+
+        <div className="flex items-center gap-6">
+          <p className="text-gray-600 font-semibold">{`${productsdata.length} Items Available`}</p>
+
+          <select
+            className="border border-gray-300 p-2 rounded-md cursor-pointer focus:ring-2 focus:ring-orange-500"
+            onChange={(e) => sorting(e)}
+          >
+            <option value="lowest">Price (Lowest)</option>
+            <option value="highest">Price (Highest)</option>
+            <option value="a-z">Alphabet (A-Z)</option>
+            <option value="z-a">Alphabet (Z-A)</option>
+          </select>
+
+          <div className="flex gap-2">
             <MenuIcon
-              className={`mx-2 cursor-pointer ${listView ? 'text-blue-400 bg-blue-950' : ''}`}
+              className={`cursor-pointer p-1  rounded-md transition ${
+                listView ? "text-orange-500 bg-orange-100" : "hover:bg-gray-200"
+              }`}
+             
               onClick={listviewfunc}
-            ></MenuIcon>
-
+            />
             <AppsIcon
-              className={` cursor-pointer ${gridView ? 'text-blue-400 bg-blue-950' : ''}`}
+              className={`cursor-pointer p-1 rounded-md transition ${
+                gridView ? "text-orange-500 bg-orange-100" : "hover:bg-gray-200"
+              }`}
               onClick={gridViewfunc}
-            ></AppsIcon>
-
+            />
           </div>
-
         </div>
-
-        <div className='flex justify-between lg:w-1/2 md:w-full md:mt-5 lg:mt-0'>
-          <div className='text-gray-600 lg:ml-10 font-bold mt-4 lg:mt-0 '>{`${productsdata.length} Items Available`}</div>
-          <div className='text-center'>
-            <form action='' className='border p-2 mt-4  lg:mt-0'>
-              <select
-                className='outline-none cursor-pointer'
-                onChange={(e) => sorting(e)}
-                name='sort'
-                id='sort'
-              >
-                <option value='lowest'>Price (lowest)</option>
-                <option value='highest'>Price (highest)</option>
-                <option value='a-z'>Price (a-z)</option>
-                <option value='z-a'>Price (z-a)</option>
-              </select>
-            </form>
-          </div>
-
-
-        </div>
-
       </div>
 
-
-
-      <div className='lg:flex  '>
-        <div className='fixed top-0 left-0'>
-          <div className='lg:white  absolute lg:hidden bg-gray-200  h-screen overflow-y-auto left-0 top-20  md:w-4/5  '>
-
-            {isMenuOpen ? (<div onClick={close_sidebar}> <Products_sidebar toggleMenu={toggleMenu} /></div>) : ""}
-
+      {/* Sidebar & Products List */}
+      <div className="flex flex-col relative lg:flex-row mt-6">
+        <div>
+          {isMenuOpen && (
+            <div className="fixed inset-0 bg-gray-900 bg-opacity-50 z-40 lg:hidden" onClick={closeSidebar} />
+          )}
+          <div
+            className={`fixed top-0 left-0 h-full max-h-[800px] w-4/5 bg-white shadow-md transform ${
+              isMenuOpen ? "translate-x-0" : "-translate-x-full"
+            } transition-transform lg:static  lg:translate-x-0 lg:shadow-none`}
+            data-aos="fade-right"
+          >
+            <Products_sidebar toggleMenu={toggleMenu} />
           </div>
         </div>
-        <div className='hidden lg:flex'>
 
-          <Products_sidebar />
-
-        </div>
-
-        <div className='mt-5    lg:ml-10 ' >
-          {gridView ? <Gridlist /> : null}
-          {listView ? <Listview /> : null}
+        <div className="flex-1 mt-5 lg:ml-10" data-aos="fade-left">
+          {gridView && <Gridlist />}
+          {listView && <Listview />}
         </div>
       </div>
     </div>

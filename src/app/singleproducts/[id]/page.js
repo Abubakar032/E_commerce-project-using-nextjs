@@ -1,73 +1,83 @@
-"use client"
-import React, { useEffect, useState } from 'react';
-import { useHeroSecContext } from '@/app/Contexts/hero_sec_context';
-import { useParams } from 'next/navigation';
-import Star from '@/app/components/Star';
-import Colors from '@/app/components/Color';
-
-const url2 = 'http://localhost:6363/api/products/';
+"use client";
+import React, { useEffect, useState } from "react";
+import { useHeroSecContext } from "@/app/Contexts/hero_sec_context";
+import { useParams } from "next/navigation";
+import Star from "@/app/components/Star";
+import Colors from "@/app/components/Color";
 
 const SingleProduct = () => {
   const { id } = useParams();
   const { fetchSingleProduct, singleProduct, setLoading } = useHeroSecContext();
+  const [selectedImage, setSelectedImage] = useState("");
 
-  console.log(singleProduct, "singleProduct")
-
-  const [Image, setImage] = useState();
-
-  console.log(id, "_id")
   useEffect(() => {
-    fetchSingleProduct(`http://localhost:6363/api/products/679252bb1d34dd72422f9d0c`);
+    fetchSingleProduct(`http://localhost:6363/api/products/${id}`);
   }, [id]);
 
   useEffect(() => {
-    if (singleProduct?.image && singleProduct.image.length > 0) {
-      setImage(singleProduct.images[0].url);
+    if (singleProduct?.images?.length > 0) {
+      setSelectedImage(singleProduct.images[0]?.url);
     }
-  }, [singleProduct?.images]);
+  }, [singleProduct]);
 
   if (setLoading) {
     return (
-      <div className='grid place-items-center w-screen h-screen'>
-        <div className="inline-block h-8 w-8 fixed animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite] dark:text-white" role="status">
-          <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
-        </div>
+      <div className="flex justify-center items-center min-h-screen">
+        <div className="animate-spin h-10 w-10 border-4 border-orange-500 border-t-transparent rounded-full"></div>
       </div>
     );
   }
 
-  const images = singleProduct.images || [];
-
   return (
-    <>
-      <div className='grid lg:grid-cols-2 py-16 m-auto w-5/6  pt-40'>
-        <div className='grid  lg:grid-cols-2 place-items-center'>
-          <div className='grid grid-cols-4 lg:grid-cols-1'>
-            {images.map((current, index) => (
-              <div key={index} className='py-1'>
-                <img src={current.url} className='h-16 w-full px-2' onClick={() => setImage(current.url)} alt={current.id} />
-              </div>
+    <div className="container mx-auto py-20 px-5 lg:px-16 my-28">
+      <div className="grid lg:grid-cols-2 gap-10">
+        {/* Product Images */}
+        <div className="flex flex-col items-center">
+          {/* Large Main Image */}
+          <div className="border rounded-lg shadow-lg p-2">
+            <img
+              src={selectedImage}
+              alt="Selected"
+              className="w-full h-96 object-cover rounded-lg"
+            />
+          </div>
+
+          {/* Thumbnail Images (Below the Big Image) */}
+          <div className="flex justify-center gap-3 mt-4">
+            {singleProduct.images?.map((img, index) => (
+              <img
+                key={index}
+                src={img.url}
+                className={`h-16 w-16 object-cover cursor-pointer border-2 ${
+                  selectedImage === img.url ? "border-orange-500" : "border-gray-300"
+                } rounded-md transition-transform hover:scale-110`}
+                onClick={() => setSelectedImage(img.url)}
+                alt={`Thumbnail ${index}`}
+              />
             ))}
           </div>
-          <div>
-            <img src={Image} alt='image' className='pr-4' />
-          </div>
         </div>
-        <div>
-          <h>{singleProduct.name}</h>
-          {/* Assuming Star component is defined */}
-          <Star star={singleProduct.stars} color={singleProduct.colors} review={singleProduct.reviews} />
-          <p>Price: {singleProduct.price}</p>
-          <p>{singleProduct.description}</p>
-          <p>Available: In stock</p>
-          <p>ID: {singleProduct.id}</p>
-          <p>Brand: {singleProduct.company}</p>
-          <hr />
-          {/* Assuming Colors component is defined */}
-          <Colors color={singleProduct.colors} id={singleProduct._id} product={singleProduct} stock={singleProduct.stock} />
+
+        {/* Product Details */}
+        <div className="space-y-4">
+          <h1 className="text-3xl font-bold text-gray-800">{singleProduct.name}</h1>
+          <Star star={singleProduct.stars} review={singleProduct.reviews} />
+          <p className="text-xl font-semibold text-orange-500">${singleProduct.price}</p>
+          <p className="text-gray-600">{singleProduct.description}</p>
+          <p className="font-medium text-green-600">Available: In Stock</p>
+          <p className="text-gray-700">Brand: {singleProduct.company}</p>
+          <hr className="my-4" />
+          <Colors
+            color={singleProduct.colors}
+            id={singleProduct._id}
+            product={singleProduct}
+            stock={singleProduct.stock}
+          />
+        
+
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
