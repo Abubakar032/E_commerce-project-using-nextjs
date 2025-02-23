@@ -3,59 +3,74 @@ import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Link from 'next/link';
+
 const Footer = () => {
   return (
-    <div>
-      <div className='flex m-auto border lg:relative lg:top-20 rounded-2xl  bg-white justify-between' style={{ width: "90%" }}>
-        <div className='text-black-400 ml-10 '>
-
-          <p className='pt-2'>Ready to get started? </p>
-          <p>Talk to us Today</p>
+    <div className="relative  flex justify-center items-center bg-gray-100 w-full mx-8 xl:mx-auto max-w-[1640px] pt-20">
+      {/* Call-to-action Section */}
+      <div className='flex flex-col lg:absolute lg:z-[2] lg:top-[0px] lg:flex-row w-full max-w-[940px] items-center justify-between border rounded-2xl bg-white p-6 mx-auto py-10 shadow-lg' >
+        <div className='text-gray-700 text-center lg:text-left'>
+          <p className='text-xl font-bold'>Ready to get started?</p>
+          <p className='text-sm'>Talk to us today and make a difference.</p>
         </div>
-        <div className='mt-50% mr-10'>
-          <button className='btn btn-primary mt-4'>Get started</button>
+        <div className='mt-4 lg:mt-0'>
+          <button className='bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-all'>Get Started</button>
         </div>
       </div>
-      <div className='bg-blue-950 text-white sm:text-center'>
-        <div className='mt-10 grid lg:grid-cols-4 gap-3 bg-blue-950 m-auto  text-white' style={{ width: "90%" }}>
-          <div className='   lg:pt-24'>
-            <h1 className='text-2xl'>AthleticEdge</h1>
-            <p className='' style={{ fontSize: '15px' }}>The sportswear market is growing rapidly due to increasing health consciousness and a surge in fitness activities. AthleticEdge aims to bridge the gap in user-friendly online shopping by providing an intuitive, efficient platform using modern web and mobile technologies.</p>
+      
+      {/* Footer Main Section */}
+      <div className='bg-blue-950 pt-32 text-white pb-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-auto text-center' style={{ width: "90%" }}>
+          {/* Company Info */}
+          <div>
+            <h1 className='text-3xl font-extrabold'>AthleticEdge</h1>
+            <p className='text-sm mt-3 leading-relaxed opacity-80'>The sportswear market is growing rapidly due to increasing health consciousness. AthleticEdge aims to bridge the gap in user-friendly online shopping by providing an intuitive platform using modern web and mobile technologies.</p>
           </div>
-          <div className='   lg:pt-24'>
-            <p>Subcribe to get importance updates</p>
-            <input type="text" className='h-10' placeholder='Your e-mail' />
-            <br />
-            <button className='btn btn-primary mt-3'>Subcribe</button>
-          </div>
-          <div className='   lg:pt-24'>
-            <p>follow Us</p>
-            <div className='flex -tracking-widest sm:text-center sm:m-auto '>
-              <h1 className='text-center' style={{ width: "35px", height: '35px', border: 'solid 2px white', borderRadius: '35px' }}>
-                <a href="https://www.facebook.com/abubakar.nawaz.786"><FacebookRoundedIcon className=' mb-4 text-white'></FacebookRoundedIcon></a></h1>
-              <h1 className=' sm:m-auto sm:text-center' style={{ width: "35px", height: '35px', border: 'solid 2px white', borderRadius: '35px' }}>
-                <TwitterIcon className='mb-4 ml-1'></TwitterIcon>
-              </h1>
-              <h1 className='text-center' style={{ width: "35px", height: '35px', border: 'solid 2px white', borderRadius: '35px' }}>
-                <a href="https://www.instagram.com/mian_abubakar07/?hl=en"> <InstagramIcon className='mb-4 text-white'></InstagramIcon></a></h1>
+          
+          {/* Pages */}
+          <div className='text-center'>
+            <p className='text-lg font-semibold'>Pages</p>
+            <div className='mt-3 space-y-2'>
+              <Link href='/' className='block text-white hover:text-orange-400 transition-all'>Home</Link>
+              <Link href='/about' className='block text-white hover:text-orange-400 transition-all'>About</Link>
+              <Link href='/products' className='block text-white hover:text-orange-400 transition-all'>Products</Link>
+              <Link href='/cart' className='block text-white hover:text-orange-400 transition-all'>Cart</Link>
             </div>
           </div>
-          <div className='   lg:pt-24'>
-            <a href="+92 3431427193" className=' no-underline text-white'>Call Us</a>
-            <br />
-            +92 3431427193
+          
+          {/* Social Media Links */}
+          <div>
+            <p className='text-lg font-semibold'>Follow Us</p>
+            <div className='flex justify-center space-x-4 mt-3'>
+              <a href="https://www.facebook.com/abubakar.nawaz.786" className='flex items-center text-orange-500   justify-center w-10 h-10 bg-white  hover:bg-orange-500 rounded-full transition-all'>
+                <FacebookRoundedIcon className='' />
+              </a>
+              <a href="https://twitter.com" className='flex items-center text-orange-500   justify-center w-10 h-10 bg-white  hover:bg-orange-500 rounded-full transition-all'>
+                <TwitterIcon className='' />
+              </a>
+              <a href="https://www.instagram.com/mian_abubakar07/?hl=en" className='flex items-center text-orange-500   justify-center w-10 h-10 bg-white  hover:bg-orange-500 rounded-full transition-all'>
+                <InstagramIcon className='' />
+              </a>
+            </div>
+          </div>
+          
+          {/* Newsletter Subscription */}
+          <div>
+            <p className='text-lg font-semibold'>Subscribe for Updates</p>
+            <input type="email" className='h-10 w-full mt-2 p-3 rounded bg-gray-200 text-black focus:outline-none' placeholder='Your email address' />
+            <button className='bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 mt-3 w-full rounded-lg shadow-md transition-all'>Subscribe</button>
           </div>
         </div>
-        <h1><hr /></h1>
-        <div className='flex m-auto justify-between pb-8' style={{ width: "90%" }}>
-          <div className='w-1/2'>
-            @{new Date().getFullYear()}AthleticEdge All right Reserveed
+        
+        {/* Footer Bottom */}
+        <hr className='my-8 border-gray-700' />
+        <div className='flex flex-col lg:flex-row justify-between items-center mx-auto text-sm' style={{ width: "90%" }}>
+          <div className='text-center lg:text-left opacity-80'>
+            &copy; {new Date().getFullYear()} AthleticEdge. All rights reserved.
           </div>
-          <div className='w-1/2'>
-          <Link href='faqs'> Faqs </Link>
-
-            <br />
-           <Link href='terms-and-conditions'> TERMS & CONDITIONs </Link>
+          <div className='flex space-x-4 mt-4 lg:mt-0'>
+            <Link href='/faqs' className='text-white hover:text-orange-400 transition-all'>FAQs</Link>
+            <Link href='/terms-and-conditions' className='text-white hover:text-orange-400 transition-all'>Terms & Conditions</Link>
           </div>
         </div>
       </div>
@@ -63,4 +78,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Footer;

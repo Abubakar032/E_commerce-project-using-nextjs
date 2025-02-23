@@ -1,82 +1,108 @@
-"use client"
-import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
-import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
-import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
-import Link from 'next/link';
-import FeatureProducts from './components/Feature_products';
-
+"use client";
+import { useEffect } from "react";
+import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
+import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+import PaidOutlinedIcon from "@mui/icons-material/PaidOutlined";
+import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import FeatureProducts from "./components/Feature_products";
+import HeroSlider from "./components/HeroHeader";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   return (
     <>
-      <div className='m-auto w-4/5  pt-24  pb-[400px] lg:pb-5 '   >
-        <div className='grid lg:grid-cols-2  h-96      gap-3  my-8'>
-          <div className='  '>
-            <p className='font-bold'>Welcome to </p>
-            <h1>AthleticEdge  Store </h1>
-            <p className='mt-5'>The sportswear market is growing rapidly, driven by increasing health consciousness and a surge
-              in sports and fitness activities. However, many existing online platforms fail to provide a userfriendly and comprehensive shopping experience. Our project, AthleticEdge, seeks to address
-              this gap by developing an intuitive and efficient mobile and web-based storefront tailored for
-              sportswear. This platform will leverage modern web technologies and mobile frameworks to
-              ensure accessibility, performance, and scalability.</p>
-            <div className=' grid sm:place-items-center '>
-              <Link href="/products" ><button className=' btn btn-primary bg-blue-500'>check now</button></Link>
+      <HeroSlider />
 
+      <section className="py-16 bg-white">
+        <FeatureProducts />
+      </section>
+
+      {/* <div className="grid lg:grid-cols-3 gap-8 max-w-[1440px] mx-8  2xl:mx-auto py-20">
+        <div
+          className="shadow-lg p-6 text-orange-500  bg-gray-100 rounded-lg flex flex-col items-center justify-center space-y-4 transition duration-300 hover:shadow-xl"
+          data-aos="fade-up"
+        >
+          <div className="flex items-center bg-white justify-center w-32 h-32 rounded-full ">
+            <DeliveryDiningIcon className=" text-orange-500 w-28 h-28  "></DeliveryDiningIcon>
+          </div>
+
+          <p className="font-bold text-lg text-gray-700">
+            Super Fast & Free Delivery
+          </p>
+        </div>
+
+        <div className="grid grid-rows-2 gap-6">
+          <div
+            className="shadow-lg p-6 bg-gray-100 rounded-lg flex flex-col items-center space-y-4 transition duration-300 hover:shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div className="flex items-center bg-white justify-center w-32 h-32 rounded-full ">
+              <AdminPanelSettingsIcon className=" text-orange-500 w-28 h-28  "></AdminPanelSettingsIcon>
             </div>
+            <p className="font-bold text-lg text-gray-700">
+              Non-Contact Shopping
+            </p>
           </div>
-          <div className='  float-right h-1/2'>
-            <img className='  h-[400px]  w-full shadow ' src="f1.jpg" alt=""  />
-          </div>
-        </div>
-      </div>
 
-
-      <FeatureProducts />
-      <div className='grid lg:grid-cols-3  m-auto  gap-6  w-4/5     py-10  '  >
-        <div className='shadow grid bg-gray-100 place-items-center'>
-          <DeliveryDiningIcon className='bg-white w-14 h-14 rounded-full'></DeliveryDiningIcon>
-          <p className='font-bold '>Super fast and free delivery</p>
-        </div>
-        <div className='grid grid-rows-2 gap-4  '>
-
-          <div className=' font-bold box2 shadow grid bg-gray-100 place-items-center'>
-            <AdminPanelSettingsIcon className='bg-white rounded-full' /> <p>Non contact Shopping</p>
-          </div>
-          <div className='shadow grid place-items-center bg-gray-100'>
-            <FavoriteBorderOutlinedIcon className='bg-white rounded-full'  ></FavoriteBorderOutlinedIcon> <p className='font-bold'> Monry-back guarante</p>
+          <div
+            className="shadow-lg p-6 bg-gray-100 rounded-lg flex flex-col items-center justify-center space-y-4 transition duration-300 hover:shadow-xl"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div className="flex items-center bg-white justify-center w-32 h-32 rounded-full ">
+              <FavoriteBorderOutlinedIcon className=" text-orange-500 w-28 h-28  "></FavoriteBorderOutlinedIcon>
+            </div>
+            <p className="font-bold text-lg text-gray-700">
+              Money-Back Guarantee
+            </p>
           </div>
         </div>
-        <div className='shadow grid place-items-center bg-gray-100'>
-          <PaidOutlinedIcon className='bg-white rounded-full' /> <p className='font-bold'> super secure payment system</p>
+
+        <div
+          className="shadow-lg p-6 bg-gray-100 rounded-lg justify-center flex flex-col items-center space-y-4 transition duration-300 hover:shadow-xl"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <div className="flex items-center bg-white justify-center w-32 h-32 rounded-full ">
+            <PaidOutlinedIcon className=" text-orange-500 w-28 h-28  "></PaidOutlinedIcon>
+          </div>
+          <p className="font-bold text-lg text-gray-700">
+            Super Secure Payment System
+          </p>
         </div>
-      </div>
+      </div> */}
 
-      <h1 className=' mt-48'></h1>
-
-      <div className='bg-gray-100 mb-8'>
-        <p className='text-center pt-8'>Trusted by 3000+ companies</p>
-        <div className='w-4/5 m-auto grid grid-cols-4 pb-8 pt-8'>
-          <div className='grid place-items-center'>
-            <img src="amazon.png" alt="amazon" className=' w-14 h-14 rounded-full' />
-          </div>
-          <div className='grid place-items-center'>
-            <img src="com.png" alt="amazon" className=' w-14 h-14 rounded-full' />
-          </div>
-          <div className='grid place-items-center'>
-            <img src="adidas.png" alt="amazon" className=' w-14 h-14 rounded-full' />
-          </div>
-          <div className='grid place-items-center'>
-            <img src="apple.png" alt="amazon" className=' w-14 h-14 rounded-full' />
-          </div>
-
+      {/* Trusted Companies Section */}
+      <section className="bg-gray-100 py-12 w-full">
+        <p className="text-center text-lg font-semibold" data-aos="fade-up">
+          Trusted by <span className="text-orange-500 font-bold">3000+</span>{" "}
+          companies
+        </p>
+        <div
+          className="mx-8 max-w-[1440px] items-center justify-items-center w-full  2xl:mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 py-6"
+          data-aos="zoom-in"
+        >
+          {["amazon.png", "com.png", "adidas.png", "apple.png"].map(
+            (logo, index) => (
+              <div key={index} className="flex justify-center shadow-md items-center rounded-full w-32 h-32 bg-white ">
+                <img
+                  src={logo}
+                  alt={logo}
+                  className="w-24 h-24  "
+                />
+              </div>
+            )
+          )}
         </div>
-      </div>
-
-
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
